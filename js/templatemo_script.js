@@ -111,8 +111,8 @@ var map = '';
 
 function initialize() {
     var mapOptions = {
-      zoom: 14,
-      center: new google.maps.LatLng(16.8461789,96.1309764)
+      zoom: 13,
+      center: new google.maps.LatLng(43.120189,-77.549766)
     };
     map = new google.maps.Map(document.getElementById('map-canvas'),  mapOptions);
 }

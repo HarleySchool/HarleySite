@@ -27,7 +27,44 @@ jQuery(function($) {
         $('#responsive').html(mainMenuList);
 	
 	//for image slide on menu item click(normal) and responsive
-	$("#menu-list a, #responsive a").on('click',function(e){
+	$("#menu-list a").on('mouseover',function(e){
+            e.preventDefault();
+            if (menuDisabled == false) // check the menu has disabled?
+            {
+                menuDisabled = true; // disable to menu
+                
+                var name = $(this).attr('href');
+                $('#menu-list li').removeClass('active');
+				
+                //  set active to both menu
+                var menuClass = $(this).parent('li').attr('class');
+                $('.'+menuClass).addClass('active');
+
+                // hide responsive menu
+                
+                // get image url and assign to backstretch for background
+                var imgSrc = $("img"+name+"-img").attr('src');
+                $.backstretch(imgSrc, {speed: 500}); //backstretch for background fade in/out
+                
+                // content slide in/out
+                $("section.active").animate({left:$("section.active").outerWidth()}, 400,function(){
+                    $(this).removeClass("active");
+                    $(this).hide();
+                    $(name+"-text").show();
+                    $(name+"-text").animate({left:'0px'},400,function(){
+                        $(this).addClass("active");
+                        
+                        google.maps.event.trigger(map, 'resize'); // resize map
+                        $.backstretch("resize"); // resize the background image
+                        
+                        menuDisabled = false; // enable the menu
+                    });
+                });
+                
+            }
+            return;
+	});
+        $("#menu-list a, #responsive a").on('click',function(e){
             e.preventDefault();
             if (menuDisabled == false) // check the menu has disabled?
             {
@@ -66,7 +103,6 @@ jQuery(function($) {
             }
             return;
 	});
-        
     });
 
 });

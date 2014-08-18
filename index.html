@@ -13,7 +13,9 @@
         
         <!-- Google Web Font Embed -->
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,500,300,700' rel='stylesheet' type='text/css'>
-        
+      
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/templatemo_main.css">
     </head>
@@ -34,9 +36,11 @@
                 <ul id="menu-list">
                     <li class="active home-menu"><a href="#home">Home</a></li>
                     <li class="research-menu"><a href="#research">Research </a></li>
+                    <li class="newspaper-menu"><a href="#newspaper">Newspapers </a></li>
+
                     <li class="ebooks-menu"><a href="#ebooks">E-Books </a></li>
                     <li class="srlists-menu"><a href="#srlists">Summer Reading Lists </a></li>
-                    <li class="resources-menu"><a href="#resources">Resources</a></li>
+                    <li class="resources-menu"><a href="#resources">Teacher Resources</a></li>
                     <li class="contact-menu"><a href="#contact">Contact</a></li>
                 </ul>
             </div><!-- /.menu -->
@@ -45,6 +49,7 @@
                 <div class="image-container">
                     <img src="images/books-bg.jpg" id="home-img" class="main-img inactive" alt="Home">
                     <img src="images/books-bg-2.jpg" id="research-img" class="inactive" alt="Research">
+                    <img src="images/books-bg-2.jpg" id="newspaper-img" class="inactive" alt="Newspaper">
                     <img src="images/books-bg-3.jpg" id="ebooks-img"  class="inactive" alt="E-Books">
                     <img src="images/books-bg-4.jpg" id="srlists-img" class="inactive" alt="SRLists">
                     <img src="images/books-bg-4.jpg" id="resources-img" class="inactive" alt="Resources">
@@ -58,10 +63,27 @@
                         
                         <section id="home-text" class="active templatemo-content-section">
                             <div class="col-sm-12 col-md-12 col-lg-12">
-                              <h2>Welcome to The Library </h2>
-                              <p>Blurb about harley library here--------------------------------------------------------------------------------------------------------------------------------------------</p>
-                              <p>Bit of information regarding navigation/FAQ?</p>
-                            </div>
+                              
+                            	<div class="tabbable">
+	                                <ul class="nav nav-tabs">
+                                      <li class="active"><a href="#main1" data-toggle="tab">Home</a></li>
+                                      <li><a href="#main2" data-toggle="tab">Library Catalog</a></li>
+                                      <li><a href="#main3" data-toggle="tab">Webpath Express</a></li>
+                                  	</ul>
+                              		<div class="tab-content">
+                                        <div id="main1" class="tab-pane active">
+                                            <h2>Welcome to The Library </h2>
+                                            <p>Blurb about harley library</p>
+                                        </div>
+                                		<div id="main2" class="tab-pane">
+                                			<div>Stuff Here</div>
+                                		</div>
+                                		<div id="main3" class="tab-pane">
+                                			<div>Other Stuff Here</div>
+                            			</div>
+                            		</div><!-- /.tab-content -->    
+                            	</div><!--/.tabbable -->   
+                            </div>                            
                         </section><!-- /.home-text -->    
 
                         <section id="research-text" class="inactive">
@@ -69,39 +91,35 @@
                             
                               <div class="tabbable">
                               <ul class="nav nav-tabs">
-                                <li class="active"><a href="#researchPane1" data-toggle="tab">Newspapers</a></li>
-                                <li><a href="#researchPane2" data-toggle="tab">Encyclopedias</a></li>
-                                <li><a href="#researchPane3" data-toggle="tab">Opposing Viewpoints</a></li>
-                                <li><a href="#researchPane4" data-toggle="tab">Health and Wellness</a></li>                                <li><a href="#researchPane5" data-toggle="tab">Gender</a></li>
-
+                                <li class="active"><a href="#researchPane1" data-toggle="tab">Encyclopedias</a></li>
+                                <li><a href="#researchPane2" data-toggle="tab">Opposing Viewpoints</a></li>
+                                <li><a href="#researchPane3" data-toggle="tab">Health and Wellness</a></li>                                <li><a href="#researchPane4" data-toggle="tab">Gender</a></li>
                               </ul>
                               <hr>
-                              <div class="tab-content">
+                              <div class="tab-content">                                
                                 <div id="researchPane1" class="tab-pane active">
-                                
-                                
-                                  
-                                  <div><a href="http://google.com" target="_blank">The New York Times</a></div>                                  <div><a href="http://google.com" target="_blank">New York State Newspapers</a></div>
-                                  <div><a href="http://google.com" target="_blank">Newspapers From Around The World</a></div>                                  
-                                  
-                                </div>
-                                <div id="researchPane2" class="tab-pane">
                                   <div><a href="http://google.com" target="_blank">Brittanica Online</a></div>                                  <div><a href="http://google.com" target="_blank">Groliers</a></div>
                                 </div>
-                                <div id="researchPane3" class="tab-pane">
+                                <div id="researchPane2" class="tab-pane">
                                   <div>Stuff here? Links? Blurb?</div>
+                                </div>
+                                <div id="researchPane3" class="tab-pane">
+                                  <div>Other Stuff here? Links? Blurb?</div>
                                 </div>
                                 <div id="researchPane4" class="tab-pane">
-                                  <div>Stuff here? Links? Blurb?</div>
-                                </div>
-                                <div id="researchPane5" class="tab-pane">
-                                  <div>Stuff here? Links? Blurb?</div>
+                                  <div>Other Other Stuff here? Links? Blurb?</div>
                                 </div>
                               </div><!-- /.tab-content -->
                             </div><!-- /.tabbable -->
                            
                         </section><!-- /.research-text --> 
-                        
+                        <section id="newspaper-text" class="inactive">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="newspaper">
+                                <div><a href="http://google.com" target="_blank">The New York Times</a></div>                                <div><a href="http://google.com" target="_blank">New York State Newspapers</a></div>
+                                <div><a href="http://google.com" target="_blank">Newspapers From Around The World</a></div>                          </div>
+                            </div>
+                        </section><!-- /.newspaper-text -->    
 
                         <section id="ebooks-text" class="inactive">
                             <h2 class="text-center">E-Books</h2>

@@ -89,7 +89,7 @@ img.slide {
     text-align:center;
 	font-color:black;
 }
-.tab-content div{
+.newspaper > div, .tab-content > div{
 font-size:24px;
 	font-color:black;
 	font-weight:bold;
